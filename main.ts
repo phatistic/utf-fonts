@@ -1,5 +1,5 @@
 //% color="#43e893" icon="\uf249"
-namespace Fonts {
+namespace UtFonts {
 
     let ligs: string[] = []
     let ligages: Image[] = []
