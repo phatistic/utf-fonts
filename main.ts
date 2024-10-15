@@ -13,11 +13,11 @@ namespace UtfFonts {
         to.drawTransparentImage(src, x, y);
     }
 
-    //% blockid= utfont_setupcharimg
+    //% blockid=utfont_setupcharimg
     //% block="set $glyph to $imgi=screen_image_picker staying $notmove erase $bcol spacebar $scol"
     //% bcol.shadow=colorindexpicker
     //% scol.shadow=colorindexpicker
-    //% group="Create"
+        //% group="Create"
     export function SetCharecter(glyph: string, imgi: Image, notmove: boolean, bcol: number, scol: number) {
         let scnwidt = true
         let scwidt = false
@@ -80,7 +80,7 @@ namespace UtfFonts {
     //% block="Set Charcter $PngSheet=srceen_image_picker with $GroupChar but $StayChar is not move and w $twidt h $theig and bcol $bcl scol $scl"
     //% bcl.shadow=colorindexpicker
     //% scl.shadow=colorindexpicker
-    //% group="Create"
+        //% group="Create"
     export function setCharFromSheet(PngSheet: Image, GroupChar: string, StayChar: string, twidt: number, theig: number, bcl: number, scl: number) {
         let gwidt = Math.floor(PngSheet.width / twidt)
         let gheig = Math.floor(PngSheet.height / theig)
@@ -103,7 +103,7 @@ namespace UtfFonts {
 
     //% blockid=utfont_numofglyphs
     //% block="number of glyphs"
-    //% group="ArrayData"
+        //% group="ArrayData"
     export function NumOfGlyphs(): number {
         return ligs.length
     }
@@ -117,7 +117,7 @@ namespace UtfFonts {
 
     //% blockid=utfont_arrofglyphs
     //% block="array of glyphs"
-    //% group="ArrayData"
+        //% group="ArrayData"
     export function GlyphArray(): String[] {
         return ligs
     }
@@ -125,7 +125,7 @@ namespace UtfFonts {
     //% blockid=utfont_createimgofstr
     //% block="create the image of $input in $iwidt and fill $icol"
     //% icol.shadow=colorindexpicker
-    //% group="Render"
+        //% group="Render"
     export function SetImage(input: string, iwidt: number, icol: number) {
         let heig = 0
         let widt = 0
@@ -233,14 +233,14 @@ namespace UtfFonts {
 
     //% blockid=utfont_setspacingletter
     //% block="set letter spacing to $input"
-    //% group="Modify"
+        //% group="Modify"
     export function SetSpace(input: number) {
         letterspace = input
     }
 
     //% blockid=utfont_changespacingletter
     //% block="change letter spacing by $input"
-    //% group="Modify"
+        //% group="Modify"
     export function ChangeSpace(input: number) {
         letterspace += input
     }
