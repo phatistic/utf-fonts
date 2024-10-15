@@ -94,7 +94,7 @@ namespace Fonts {
             txi = xi * twidt
             tyi = yi * theig
             drawTransparentImage(PngSheet, uig, 0 - txi, 0 - tyi)
-            SetCharecter(GroupChar.charAt(tvn), uig, StayChar.includes(GroupChar.charAt(tvn)), bcl, scl)
+            setCharecter(GroupChar.charAt(tvn), uig, StayChar.includes(GroupChar.charAt(tvn)), bcl, scl)
 
         }
     }
